@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, TextInput, Alert } from "react-native";
 import axios from "axios";
 import { NativeModules } from "react-native";
+
 class SignUp extends React.Component {
   constructor(props) {
     super(props);

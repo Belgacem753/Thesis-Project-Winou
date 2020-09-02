@@ -5,14 +5,14 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Map from "./map";
 import Line from "./Lines";
 
-function Profile(props) {
+function Mapfunction(props) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Map />
     </View>
   );
 }
-function Feed(props) {
+function LinesFunction(props) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Line navigation={props.navigation} />
@@ -31,8 +31,8 @@ function MyTabs(props) {
       style={{ backgroundColor: "tomato" }}
     >
       <Tab.Screen
-        name="Profile"
-        component={Profile}
+        name="Mapfunction"
+        component={Mapfunction}
         options={{
           tabBarLabel: "Map",
           tabBarIcon: ({ color }) => (
@@ -41,8 +41,8 @@ function MyTabs(props) {
         }}
       />
       <Tab.Screen
-        name="Feed"
-        component={Feed}
+        name="LinesFunction"
+        component={LinesFunction}
         options={{
           tabBarLabel: "Lines",
           tabBarIcon: ({ color }) => (
